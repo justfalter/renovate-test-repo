@@ -8,7 +8,17 @@
   "ignorePresets": [":ignoreModulesAndTests"],
   "ignorePaths": ["**/node_modules/**", "**/__fixtures__/**", "test/**"],
   "rebaseWhen": "conflicted",
-  "baseBranchPatterns": ["$default", "next"],
+  "baseBranchPatterns": ["$default"],
+  "logLevelRemap": [
+    {
+      "matchMessage": "/statistics/",
+      "newLogLevel": "info"
+    },
+    {
+      "matchMessage": "/Fetching changelog/",
+      "newLogLevel": "info"
+    }
+  ],
   "packageRules": [
     {
       "matchSourceUrls": ["https://github.com/aws/aws-sdk-js-v3{/**,}"],
