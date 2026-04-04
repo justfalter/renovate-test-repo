@@ -1,5 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "monorepo:aws-sdk-go-v2",
+    "monorepo:aws-sdk-js-v3"
+  ]
   "assignees": ["justfalter"],
   "reviewers": ["justfalter"],
   "semanticCommitScope": "deps",
@@ -23,6 +28,10 @@
     {
       "matchSourceUrls": ["https://github.com/aws/aws-sdk-js-v3{/**,}"],
       "groupName": "aws-sdk-js-v3 monorepo"
+    },
+    {
+      "matchSourceUrls": ["https://github.com/aws/aws-sdk-go-v2{/**,}"],
+      "groupName": "aws-sdk-go-v2 monorepo"
     }
   ]
 }
