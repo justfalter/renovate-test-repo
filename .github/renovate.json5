@@ -26,6 +26,12 @@
   ],
   "packageRules": [
     {
+      // Enable go module updates.
+      "matchManagers": ["gomod"],
+      "matchDepTypes": ["golang"],
+      "enabled": true
+    },
+    {
       "matchSourceUrls": ["https://github.com/aws/aws-sdk-js-v3{/**,}"],
       "groupName": "aws-sdk-js-v3 monorepo"
     },
