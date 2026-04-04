@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "assignees": ["justfalter"],
+  "reviewers": ["justfalter"],
+  "semanticCommitScope": "deps",
+  // "automergeType": "pr",
+  "prCreation": "immediate",
+  "ignorePresets": [":ignoreModulesAndTests"],
+  "ignorePaths": ["**/node_modules/**", "**/__fixtures__/**", "test/**"],
+  "rebaseWhen": "conflicted",
+  "baseBranchPatterns": ["$default", "next"],
+  "packageRules": [
+    {
+      "matchSourceUrls": ["https://github.com/aws/aws-sdk-js-v3{/**,}"]
+      "groupName": "aws-sdk-js-v3 monorepo"
+    }
+  ]
+}
