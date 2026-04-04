@@ -14,6 +14,9 @@
   "ignorePaths": ["**/node_modules/**", "**/__fixtures__/**", "test/**"],
   "rebaseWhen": "conflicted",
   "baseBranchPatterns": ["$default"],
+  "commitHourlyLimit": 10,
+  "prHourlyLimit": 10,
+  "prConcurrentLimit": 10,
   "logLevelRemap": [
     {
       "matchMessage": "/statistics/",
