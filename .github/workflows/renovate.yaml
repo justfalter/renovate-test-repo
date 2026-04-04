@@ -3,14 +3,10 @@ on:
   # This lets you dispatch a renovate job with different cache options if you want to reset or disable the cache manually.
   workflow_dispatch:
     inputs:
-      repoCache:
-        description: 'Reset or disable the cache?'
-        type: choice
-        default: enabled
-        options:
-          - enabled
-          - disabled
-          - reset
+      log_level:
+        description: 'log level'
+        type: string
+        default: debug
 
 jobs:
   renovate:
@@ -30,6 +26,8 @@ jobs:
 
       - uses: renovatebot/github-action@v46.1.7
         with:
-          configurationFile: renovate.json5
+          configurationFile: .github/renovate.json5
           token: '${{ steps.get_token.outputs.token }}'
           renovate-version: 43.104.3
+        env:
+          LOG_LEVEL: ${{ inputs.log_level }}

@@ -11,7 +11,7 @@
   "baseBranchPatterns": ["$default", "next"],
   "packageRules": [
     {
-      "matchSourceUrls": ["https://github.com/aws/aws-sdk-js-v3{/**,}"]
+      "matchSourceUrls": ["https://github.com/aws/aws-sdk-js-v3{/**,}"],
       "groupName": "aws-sdk-js-v3 monorepo"
     }
   ]
