@@ -28,7 +28,6 @@
     {
       // Enable go module updates.
       "matchManagers": ["gomod"],
-      "matchDepTypes": ["golang"],
       "enabled": true
     },
     {
