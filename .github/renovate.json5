@@ -35,11 +35,13 @@
     },
     {
       "matchSourceUrls": ["https://github.com/aws/aws-sdk-js-v3{/**,}"],
-      "groupName": "aws-sdk-js-v3 monorepo"
+      "groupName": "aws-sdk-js-v3 monorepo",
+      "disableChangeLog": true
     },
     {
       "matchSourceUrls": ["https://github.com/aws/aws-sdk-go-v2{/**,}"],
-      "groupName": "aws-sdk-go-v2 monorepo"
+      "groupName": "aws-sdk-go-v2 monorepo",
+      "disableChangeLog": true
     }
   ]
 }
