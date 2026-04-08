@@ -27,7 +27,13 @@
       "newLogLevel": "info"
     }
   ],
+  "fetchChangeLogs": "off",
   "packageRules": [
+    {
+      // Enable specific package changelogs, overriding top-level fetchChangeLogs of off
+      "matchPackageNames": ["typescript", "github.com/aws/smithy-go"],
+      "fetchChangeLogs": "pr"
+    },
     {
       // Enable go module updates.
       "matchManagers": ["gomod"],
