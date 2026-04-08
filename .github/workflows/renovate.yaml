@@ -3,6 +3,10 @@ on:
   # This lets you dispatch a renovate job with different cache options if you want to reset or disable the cache manually.
   workflow_dispatch:
     inputs:
+      renovate_version:
+        description: 'renovate version'
+        type: string
+        default: "43"
       log_level:
         description: 'log level'
         type: string
@@ -28,7 +32,7 @@ jobs:
         with:
           configurationFile: .github/renovate.js
           token: '${{ steps.get_token.outputs.token }}'
-          #renovate-version: 50.0.0
+          renovate-version: '${{ inputs.renovate_version }}'
           #renovate-image: ghcr.io/justfalter/renovate
         env:
           LOG_LEVEL: ${{ inputs.log_level }}
