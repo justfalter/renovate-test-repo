@@ -24,9 +24,9 @@
     "test/**"
   ],
   "rebaseWhen": "conflicted",
-  "baseBranchPatterns": [
-    "main"
-  ],
+  // "baseBranchPatterns": [
+  //   "main"
+  // ],
   //"commitHourlyLimit": 50,
   //"prHourlyLimit": 50,
   //"prConcurrentLimit": 50,
