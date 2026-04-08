@@ -27,9 +27,9 @@
   "baseBranchPatterns": [
     "$default"
   ],
-  "commitHourlyLimit": 50,
-  "prHourlyLimit": 50,
-  "prConcurrentLimit": 50,
+  //"commitHourlyLimit": 50,
+  //"prHourlyLimit": 50,
+  //"prConcurrentLimit": 50,
   "logLevelRemap": [
     {
       "matchMessage": "/statistics/",
