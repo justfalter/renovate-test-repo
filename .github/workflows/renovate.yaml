@@ -28,8 +28,8 @@ jobs:
         with:
           configurationFile: .github/renovate.js
           token: '${{ steps.get_token.outputs.token }}'
-          renovate-version: 50.0.0
-          renovate-image: ghcr.io/justfalter/renovate
+          #renovate-version: 50.0.0
+          #renovate-image: ghcr.io/justfalter/renovate
         env:
           LOG_LEVEL: ${{ inputs.log_level }}
           RENOVATE_NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
