@@ -3,17 +3,30 @@
   "extends": [
     "config:recommended",
     "monorepo:aws-sdk-go-v2",
-    "monorepo:aws-sdk-js-v3"
+    "monorepo:aws-sdk-js-v3",
+    "justfalter/renovate-configs"
   ],
-  "assignees": ["justfalter"],
-  "reviewers": ["justfalter"],
+  "assignees": [
+    "justfalter"
+  ],
+  "reviewers": [
+    "justfalter"
+  ],
   "semanticCommitScope": "deps",
   // "automergeType": "pr",
   "prCreation": "immediate",
-  "ignorePresets": [":ignoreModulesAndTests"],
-  "ignorePaths": ["**/node_modules/**", "**/__fixtures__/**", "test/**"],
+  "ignorePresets": [
+    ":ignoreModulesAndTests"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/__fixtures__/**",
+    "test/**"
+  ],
   "rebaseWhen": "conflicted",
-  "baseBranchPatterns": ["$default"],
+  "baseBranchPatterns": [
+    "$default"
+  ],
   "commitHourlyLimit": 50,
   "prHourlyLimit": 50,
   "prConcurrentLimit": 50,
@@ -27,27 +40,33 @@
       "newLogLevel": "info"
     }
   ],
-  "fetchChangeLogs": "off",
+  // "fetchChangeLogs": "off",
   "packageRules": [
-    {
-      // Enable specific package changelogs, overriding top-level fetchChangeLogs of off
-      "matchPackageNames": ["typescript", "github.com/aws/smithy-go"],
-      "fetchChangeLogs": "pr"
-    },
+    // {
+    //   // Enable specific package changelogs, overriding top-level fetchChangeLogs of off
+    //   "matchPackageNames": ["typescript", "github.com/aws/smithy-go"],
+    //   "fetchChangeLogs": "pr"
+    // },
     {
       // Enable go module updates.
-      "matchManagers": ["gomod"],
+      "matchManagers": [
+        "gomod"
+      ],
       "enabled": true
     },
     {
-      "matchSourceUrls": ["https://github.com/aws/aws-sdk-js-v3{/**,}"],
-      "groupName": "aws-sdk-js-v3 monorepo",
-      "fetchChangeLogs": "off"
+      "matchSourceUrls": [
+        "https://github.com/aws/aws-sdk-js-v3{/**,}"
+      ],
+      "groupName": "aws-sdk-js-v3 monorepo"
+      // "fetchChangeLogs": "off"
     },
     {
-      "matchSourceUrls": ["https://github.com/aws/aws-sdk-go-v2{/**,}"],
-      "groupName": "aws-sdk-go-v2 monorepo",
-      "fetchChangeLogs": "off"
+      "matchSourceUrls": [
+        "https://github.com/aws/aws-sdk-go-v2{/**,}"
+      ],
+      "groupName": "aws-sdk-go-v2 monorepo"
+      // "fetchChangeLogs": "off"
     }
   ]
 }
