@@ -4,7 +4,7 @@
     "config:recommended",
     // "monorepo:aws-sdk-go-v2",
     // "monorepo:aws-sdk-js-v3",
-    "justfalter/renovate-configs"
+    //"justfalter/renovate-configs"
   ],
   "assignees": [
     "justfalter"
