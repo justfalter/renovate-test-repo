@@ -24,22 +24,22 @@
     "test/**"
   ],
   "rebaseWhen": "conflicted",
-  // "baseBranchPatterns": [
-  //   "main"
-  // ],
-  //"commitHourlyLimit": 50,
-  //"prHourlyLimit": 50,
-  //"prConcurrentLimit": 50,
-  // "logLevelRemap": [
-  //   {
-  //     "matchMessage": "/statistics/",
-  //     "newLogLevel": "info"
-  //   },
-  //   {
-  //     "matchMessage": "/Fetching changelog/",
-  //     "newLogLevel": "info"
-  //   }
-  // ],
+  "baseBranchPatterns": [
+     "main"
+  ],
+  "commitHourlyLimit": 50,
+  "prHourlyLimit": 50,
+  "prConcurrentLimit": 50,
+   "logLevelRemap": [
+     {
+       "matchMessage": "/statistics/",
+       "newLogLevel": "info"
+     },
+     {
+       "matchMessage": "/Fetching changelog/",
+       "newLogLevel": "info"
+     }
+  ],
   // "fetchChangeLogs": "off",
   "packageRules": [
     // {
