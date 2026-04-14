@@ -59,7 +59,7 @@
       "matchSourceUrls": [
         "https://github.com/aws/aws-sdk-js-v3{/**,}"
       ],
-      // "fetchChangeLogs": "off",
+      "fetchChangeLogs": "off",
       "prBodyNotes": [
         "This PR body note came for aws-sdk-js-v3"
       ]
