@@ -68,8 +68,8 @@
     },
     {
       "matchPackageNames": [
-        "github.com/aws/aws-sdk-go-v2/**",
-        "github.com/aws/smithy-go/**",
+        "github.com/aws/aws-sdk-go-v2{/**,}",
+        "github.com/aws/smithy-go{/**,}",
       ],
       "groupName": "aws-sdk-go-v2 stuff"
     }
