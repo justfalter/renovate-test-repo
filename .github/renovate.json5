@@ -57,20 +57,20 @@
     },
     {
       "matchSourceUrls": [
-        "https://github.com/aws/aws-sdk-js-v3{/**,}"
-      ],
-      "fetchChangeLogs": "off",
-      "prBodyNotes": [
-        "This PR body note came for aws-sdk-js-v3"
-      ]
-    },
-    {
-      "matchSourceUrls": [
         "https://github.com/aws/aws-sdk-go-v2{/**,}"
       ],
       "fetchChangeLogs": "off",
       "prBodyNotes": [
         "This PR body note came from the rule that disables fetchChangeLogs for aws-sdk-go-v2"
+      ]
+    },
+    {
+      "matchSourceUrls": [
+        "https://github.com/aws/aws-sdk-js-v3{/**,}"
+      ],
+      // "fetchChangeLogs": "off",
+      "prBodyNotes": [
+        "This PR body note came for aws-sdk-js-v3"
       ]
     },
     {
