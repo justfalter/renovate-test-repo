@@ -25,20 +25,20 @@
   ],
   "rebaseWhen": "conflicted",
   "baseBranchPatterns": [
-     "main"
+    "main"
   ],
   "commitHourlyLimit": 50,
   "prHourlyLimit": 50,
   "prConcurrentLimit": 50,
-   "logLevelRemap": [
-     {
-       "matchMessage": "/statistics/",
-       "newLogLevel": "info"
-     },
-     {
-       "matchMessage": "/Fetching changelog/",
-       "newLogLevel": "info"
-     }
+  "logLevelRemap": [
+    {
+      "matchMessage": "/statistics/",
+      "newLogLevel": "info"
+    },
+    {
+      "matchMessage": "/Fetching changelog/",
+      "newLogLevel": "info"
+    }
   ],
   // "fetchChangeLogs": "off",
   "packageRules": [
@@ -58,15 +58,13 @@
       "matchSourceUrls": [
         "https://github.com/aws/aws-sdk-js-v3{/**,}"
       ],
-      "groupName": "aws-sdk-js-v3 monorepo"
-      // "fetchChangeLogs": "off"
+      "fetchChangeLogs": "off"
     },
     {
       "matchSourceUrls": [
         "https://github.com/aws/aws-sdk-go-v2{/**,}"
       ],
-      "groupName": "aws-sdk-go-v2 monorepo"
-      // "fetchChangeLogs": "off"
+      "fetchChangeLogs": "off"
     }
   ]
 }
