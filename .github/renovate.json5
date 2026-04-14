@@ -77,7 +77,7 @@
       "prBodyNotes": [
         "This PR body note is for smithy-go"
       ],
-      "fetchChangeLogs": "on",
+      "fetchChangeLogs": "pr",
     },
     {
       "matchPackageNames": [
