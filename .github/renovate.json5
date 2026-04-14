@@ -59,7 +59,10 @@
       "matchSourceUrls": [
         "https://github.com/aws/aws-sdk-js-v3{/**,}"
       ],
-      "fetchChangeLogs": "off"
+      // "fetchChangeLogs": "off",
+      "prBodyNotes": [
+        "This PR body note came for aws-sdk-js-v3"
+      ]
     },
     {
       "matchSourceUrls": [
@@ -83,6 +86,7 @@
       "matchPackageNames": [
         "github.com/aws/aws-sdk-go-v2{/**,}",
         "github.com/aws/smithy-go{/**,}",
+        "@aws-sdk/**"
       ],
       "groupName": "aws-sdk-go-v2 stuff"
     }
