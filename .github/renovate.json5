@@ -15,6 +15,7 @@
   "semanticCommitScope": "deps",
   // "automergeType": "pr",
   "prCreation": "immediate",
+  "fetchChangeLogs": "pr",
   "ignorePresets": [
     ":ignoreModulesAndTests"
   ],
