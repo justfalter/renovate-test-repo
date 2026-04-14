@@ -65,6 +65,13 @@
         "https://github.com/aws/aws-sdk-go-v2{/**,}"
       ],
       "fetchChangeLogs": "off"
+    },
+    {
+      "matchPackageNames": [
+        "github.com/aws/aws-sdk-go-v2/**",
+        "github.com/aws/smithy-go/**",
+      ],
+      "groupName": "aws-sdk-go-v2 stuff"
     }
   ]
 }
