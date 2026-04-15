@@ -12,6 +12,10 @@
   "reviewers": [
     "justfalter"
   ],
+  "gitIgnoredAuthors": [
+    'renovate-justfalter[bot]'
+  ],
+  "printConfig": true,
   "recreateWhen": "always",
   "semanticCommitScope": "deps",
   // "automergeType": "pr",
