@@ -12,6 +12,7 @@
   "reviewers": [
     "justfalter"
   ],
+  "recreateWhen": "always",
   "semanticCommitScope": "deps",
   // "automergeType": "pr",
   "prCreation": "immediate",
@@ -28,9 +29,9 @@
   "baseBranchPatterns": [
     "main"
   ],
-  "commitHourlyLimit": 50,
-  "prHourlyLimit": 50,
-  "prConcurrentLimit": 50,
+  "commitHourlyLimit": 100,
+  "prHourlyLimit": 100,
+  "prConcurrentLimit": 100,
   "logLevelRemap": [
     {
       "matchMessage": "/statistics/",
@@ -43,11 +44,6 @@
   ],
   // "fetchChangeLogs": "off",
   "packageRules": [
-    // {
-    //   // Enable specific package changelogs, overriding top-level fetchChangeLogs of off
-    //   "matchPackageNames": ["typescript", "github.com/aws/smithy-go"],
-    //   "fetchChangeLogs": "pr"
-    // },
     {
       // Enable go module updates.
       "matchManagers": [
@@ -61,16 +57,15 @@
       ],
       "fetchChangeLogs": "off",
       "prBodyNotes": [
-        "This PR body note came from the rule that disables fetchChangeLogs for aws-sdk-go-v2"
+        "* Changelogs for aws-sdk-go-v2 should not be getting fetched."
       ]
     },
     {
       "matchSourceUrls": [
         "https://github.com/aws/aws-sdk-js-v3{/**,}"
       ],
-      // "fetchChangeLogs": "off",
       "prBodyNotes": [
-        "This PR body note came for aws-sdk-js-v3"
+        "* This PR body note came for aws-sdk-js-v3"
       ]
     },
     {
@@ -78,9 +73,8 @@
         "github.com/aws/smithy-go{/**,}",
       ],
       "prBodyNotes": [
-        "This PR body note is for smithy-go"
+        "* This PR body note is for smithy-go"
       ],
-      "fetchChangeLogs": "pr",
     },
     {
       "matchPackageNames": [
