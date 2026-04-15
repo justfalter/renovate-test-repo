@@ -6,11 +6,11 @@ on:
       renovate_image:
         description: "renovate image"
         type: string
-        default: "ghcr.io/renovatebot/renovate:43"
+        default: "ghcr.io/renovatebot/renovate"
       renovate_version:
         description: "renovate version"
         type: string
-        default: "43"
+        default: "50"
 
       log_level:
         description: "log level"
@@ -37,7 +37,7 @@ jobs:
         with:
           configurationFile: .github/renovate.js
           token: "${{ steps.get_token.outputs.token }}"
-          # renovate-version: '${{ inputs.renovate_version }}'
+          renovate-version: "${{ inputs.renovate_version }}"
           renovate-image: "${{ inputs.renovate_image }}"
         env:
           LOG_LEVEL: ${{ inputs.log_level }}
