@@ -60,8 +60,8 @@
         "https://github.com/aws/aws-sdk-go-v2{/**,}"
       ],
       "fetchChangeLogs": "off",
-      // Do not group these updates into a single PR.
-      "groupName": null,
+      // Try requiring a huge group?
+      "minimumGroupSize": 100,
       "prBodyNotes": [
         "* Changelogs for aws-sdk-go-v2 should not be getting fetched."
       ]
