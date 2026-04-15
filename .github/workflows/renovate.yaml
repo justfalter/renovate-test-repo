@@ -10,7 +10,7 @@ on:
       renovate_version:
         description: "renovate version"
         type: string
-        default: "50"
+        default: "43"
 
       log_level:
         description: "log level"
