@@ -38,6 +38,10 @@
   "prConcurrentLimit": 100,
   "logLevelRemap": [
     {
+      "matchMessage": "/MPRMPR/",
+      "newLogLevel": "info"
+    },
+    {
       "matchMessage": "/statistics/",
       "newLogLevel": "info"
     },
