@@ -50,7 +50,6 @@
       "newLogLevel": "info"
     }
   ],
-  // "fetchChangeLogs": "off",
   "packageRules": [
     {
       // Enable go module updates.
@@ -63,9 +62,6 @@
       "matchSourceUrls": [
         "https://github.com/aws/aws-sdk-go-v2{/**,}"
       ],
-      "fetchChangeLogs": "off",
-      // Try requiring a huge group?
-      "minimumGroupSize": 100,
       "prBodyNotes": [
         "* Changelogs for aws-sdk-go-v2 should not be getting fetched."
       ]
