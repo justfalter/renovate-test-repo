@@ -1,0 +1,90 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    // "monorepo:aws-sdk-go-v2",
+    // "monorepo:aws-sdk-js-v3",
+    //"justfalter/renovate-configs"
+  ],
+  "assignees": [
+    "justfalter"
+  ],
+  "reviewers": [
+    "justfalter"
+  ],
+  "gitIgnoredAuthors": [
+    'renovate-justfalter[bot]'
+  ],
+  "printConfig": true,
+  "recreateWhen": "always",
+  "semanticCommitScope": "deps",
+  // "automergeType": "pr",
+  "prCreation": "immediate",
+  "fetchChangeLogs": "off",
+  "ignorePresets": [
+    ":ignoreModulesAndTests"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/__fixtures__/**",
+    "test/**"
+  ],
+  "rebaseWhen": "conflicted",
+  "baseBranchPatterns": [
+    "main"
+  ],
+  "commitHourlyLimit": 100,
+  "prHourlyLimit": 100,
+  "prConcurrentLimit": 100,
+  "logLevelRemap": [
+    {
+      "matchMessage": "/getReleases statistics with packages/",
+      "newLogLevel": "info"
+    },
+    {
+      "matchMessage": "/Fetching changelog/",
+      "newLogLevel": "info"
+    }
+  ],
+  "packageRules": [
+    {
+      // Enable go module updates.
+      "matchManagers": [
+        "gomod"
+      ],
+      "enabled": true
+    },
+    {
+      "matchSourceUrls": [
+        "https://github.com/aws/aws-sdk-go-v2{/**,}"
+      ],
+      "prBodyNotes": [
+        "* Changelogs for aws-sdk-go-v2 should not be getting fetched."
+      ]
+    },
+    {
+      "matchSourceUrls": [
+        "https://github.com/aws/aws-sdk-js-v3{/**,}"
+      ],
+      "prBodyNotes": [
+        "* This PR body note came for aws-sdk-js-v3"
+      ]
+    },
+    {
+      "matchPackageNames": [
+        "github.com/aws/smithy-go{/**,}",
+      ],
+      "prBodyNotes": [
+        "* This PR body note is for smithy-go"
+      ],
+    },
+    {
+      "matchPackageNames": [
+        "@aws-sdk/**",
+        "github.com/aws/aws-sdk-go-v2{/**,}",
+        "github.com/aws/smithy-go{/**,}",
+      ],
+      "groupName": "aws-sdk-go-v2 stuff"
+    }
+  ]
+}
