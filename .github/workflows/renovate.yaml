@@ -6,11 +6,11 @@ on:
       renovate_image:
         description: "renovate image"
         type: string
-        default: "ghcr.io/renovatebot/renovate"
+        default: "ghcr.io/justfalter/renovate"
       renovate_version:
         description: "renovate version"
         type: string
-        default: "43"
+        default: "surface-more-info"
 
       log_level:
         description: "log level"
